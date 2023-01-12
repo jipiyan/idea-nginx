@@ -32,14 +32,14 @@ jobs:
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       with:
         arguments: build
-    - name: Create Github Release
-      id: create-release
-      uses: actions/create-release@latest
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: 2022.3.1
-        release_name: 2022.3.1
-        body: none
-        draft: false
-        prerelease: false
+    #- name: Create Github Release
+    #  id: create-release
+    #  uses: actions/create-release@latest
+    #  env:
+    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #  with:
+    #    tag_name: 2022.3.1
+    #    release_name: 2022.3.1
+    #    body: none
+    #    draft: false
+    #    prerelease: false
