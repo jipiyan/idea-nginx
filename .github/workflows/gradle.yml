@@ -35,8 +35,8 @@ jobs:
     - name: Create Github Release
       id: create-release
       uses: actions/create-release@latest
-      #env:
-      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: 2022.3.1
         release_name: 2022.3.1
